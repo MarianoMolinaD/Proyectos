@@ -1,0 +1,77 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<butto class="btn btn-primary" @onclick="Apilar">Apilar</butto>
+<br/>
+<butto class="btn btn-primary" @onclick="Despilar">Desapilar</butto>
+<br/>
+<input type="number" @bind="Valor"/>
+<br/>
+<h4>@Valor</h4>
+<br/>
+
+<table>
+    <thead>
+        <tr>
+            <th>Staack</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stack in PILA)
+        {
+            <tr>
+                <td>@stack</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code{
+
+    int [] PILA;
+
+    int TOPE;
+
+    int Valor;
+
+
+    protected override void OnInitialized()
+    {
+        PILA = new int[5];
+        TOPE = 0;
+        Valor = 0;
+    }
+
+    bool PilaVacia() => TOPE == 0;
+    bool PilaLlena() => TOPE >= PILA.Length;
+
+    void suma()
+    {
+        Valor++;
+    }
+
+    void Apilar()
+    {
+        if (PilaLlena()) return;
+
+        PILA[TOPE] = Valor;
+
+        TOPE++;
+
+        
+    }
+
+    void Despilar()
+    {
+        if (PilaVacia()) return;
+
+        PILA[TOPE - 1] = Valor;
+
+        TOPE--;
+
+        Valor = 0;
+    }
+
+}

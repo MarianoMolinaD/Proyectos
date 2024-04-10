@@ -1,0 +1,30 @@
+﻿@model Tareas
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<div class="container">
+
+    <h1>Editar Tarea</h1>
+    <h4>Editar tarea @Model.Tarea</h4>
+
+    <form asp-controller="Tareas" asp-action="Editar">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3">
+            <label asp-for="Tarea" class="form-label">Tarea</label>
+            <input type="text" asp-for="Tarea" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Persona" class="form-label">Persona</label>
+            <input type="text" asp-for="Persona" class="form-control"/>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Precio" class="form-label">Precio</label>
+            <input type="number" asp-for="Precio" class="form-control"/>
+        </div>
+        <button class="btn btn-primary">Editar Tarea</button>
+    </form>
+
+</div>
+

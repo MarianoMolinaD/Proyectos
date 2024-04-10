@@ -1,0 +1,177 @@
+﻿@page "/"
+@using LESBlazorEliminar.Models;
+@using LESBlazorEliminar.Services.ListaBlazorApp.Services;
+
+<PageTitle>Home</PageTitle>
+
+<input type="text" class="form-control mb-2" placeholder="Insertar el valor del nodo" @bind="Informacion" />
+
+
+<button class="btn btn-success" @onclick="AgregarNodoFinal">
+    Agregar Nodo Al final
+</button>
+
+<button class="btn btn-primary" @onclick="AgregarNodoInicio">
+    Agregar Nodo Al Inicio
+</button>
+<hr />
+
+<div class="input-group m-2">
+    <input type="text" class="form-control" placeholder="Insertar posicion donde insertar nodo" aria-label="Recipient's username with two button addons" @bind="Posicion">
+    <button class="btn btn-primary" type="button" @onclick="AgregarNodoEnPosicion">Agregar nodo en posicion </button>
+    <button class="btn btn-primary" type="button" @onclick="AgregarNodoEnPosicionAntes">Agregar nodo Antes de</button>
+    <button class="btn btn-primary" type="button" @onclick="AgregarNodoEnPosicionDespues">Agregar nodo despues de</button>
+</div>
+<hr />
+<div class="input-group m-2">
+    <input type="text" class="form-control" placeholder="Ingresar el valor del nodo a buscar" aria-label="Recipient's username with two button addons" @bind="Buscar">
+    <button class="btn btn-primary" type="button" @onclick="AgregarNodoEnPosicion">Buscar nodo </button>
+</div>
+
+<p class="bg-success text-white p-3 rounded">@Mensaje</p>
+<hr />
+<p>Tamaño de la lista de nodos: @Contador</p>
+
+<hr />
+<table class="table table-bordered border-primary">
+    <thead>
+        <tr>
+
+            @foreach (var item in Lista)
+            {
+
+
+                <th>@item</th>
+
+
+            }
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            @for (int i = 0; i < Contador; i++)
+            {
+                if (Contador > 0)
+                {
+
+                    <th>@i</th>
+                }
+            }
+
+        </tr>
+    </tbody>
+
+</table>
+
+<input type="text" class="form-control mb-2" placeholder="Insertar el valor del nodo" @bind="Informacion" />
+
+<button class="btn btn-success" @onclick="AgregarNodoFinal">
+    Agregar Nodo Al final
+</button>
+
+<button class="btn btn-primary" @onclick="AgregarNodoInicio">
+    Agregar Nodo Al Inicio
+</button>
+
+<hr />
+
+<div class="input-group m-2">
+    <input type="number" class="form-control" placeholder="Insertar posición del nodo a eliminar" @bind="Posicion" />
+    <button class="btn btn-danger" type="button" @onclick="EliminarNodoEnPosicion">Eliminar Nodo En Posición</button>
+</div>
+
+<p class="bg-success text-white p-3 rounded">@Mensaje</p>
+
+<hr />
+
+<p>Tamaño de la lista de nodos: @Contador</p>
+
+<hr />
+
+
+
+@code {
+
+
+    int Contador = 0;
+
+    int Posicion { get; set; }
+
+    string Buscar = "";
+
+    public string Informacion { get; set; }
+
+    public ListaEnlazadaSimple Lista { get; set; } = new();
+
+    string Mensaje = string.Empty;
+
+
+    void AgregarNodoFinal()
+    {
+        Nodo nuevoNodo = new Nodo(Informacion);
+
+        Mensaje = Lista.AgregarNodoAlFinal(nuevoNodo);
+
+        this.Informacion = string.Empty;
+
+        SumarContador();
+    }
+
+    void AgregarNodoInicio()
+    {
+
+        Nodo nuevoNodo = new Nodo(Informacion);
+
+        Mensaje = Lista.AgregarNodoAlInicio(nuevoNodo);
+
+        this.Informacion = string.Empty;
+
+        SumarContador();
+
+
+    }
+    void AgregarNodoEnPosicion()
+    {
+        Nodo nuevoNodo = new Nodo(Informacion);
+
+        Mensaje = Lista.AgregarNodoEnPosicion(nuevoNodo, Posicion);
+
+        this.Informacion = String.Empty;
+
+        SumarContador();
+
+    }
+    void AgregarNodoEnPosicionAntes()
+    {
+        Nodo nuevoNodo = new Nodo(Informacion);
+
+        Mensaje = Lista.AgregarNodoEnPosicion(nuevoNodo, Posicion - 1);
+
+        this.Informacion = String.Empty;
+
+        SumarContador();
+
+    }
+    void AgregarNodoEnPosicionDespues()
+    {
+        Nodo nuevoNodo = new Nodo(Informacion);
+
+        Mensaje = Lista.AgregarNodoEnPosicion(nuevoNodo, Posicion + 1);
+
+        this.Informacion = String.Empty;
+
+        SumarContador();
+
+    }
+    void SumarContador()
+    {
+        Contador = Contador + 1;
+    }
+
+    void EliminarNodoEnPosicion()
+    {
+        Mensaje = Lista.EliminarNodoEnPosicion(Posicion);
+        SumarContador();
+    }
+
+}

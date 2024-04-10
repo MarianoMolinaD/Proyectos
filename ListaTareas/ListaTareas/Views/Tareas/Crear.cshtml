@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Crear Tarea";
+}
+
+<div class="container">
+
+    <h1>Agregar Tarea</h1>
+    <h4>Aqui podras agregar una tarea</h4>
+
+    <form asp-controller="Tareas" asp-action="Crear">
+        <div class="mb-3">
+            <label for="Tarea" class="form-label">Tarea</label>
+            <input type="text" id="Tarea" name="Tarea" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label for="Persona" class="form-label">Persona</label>
+            <input type="text" id="Persona" name="Persona" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label for="Precio" class="form-label">Precio</label>
+            <input type="number" id="Precio" name="Precio" class="form-control" />
+        </div>
+        <button class="btn btn-primary">Crear Tarea</button>
+    </form>
+
+</div>
+
+
+

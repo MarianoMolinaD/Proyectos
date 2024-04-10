@@ -1,0 +1,14 @@
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\bin\Debug\net6.0\Tarea de Progra 1.exe
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\bin\Debug\net6.0\Tarea de Progra 1.deps.json
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\bin\Debug\net6.0\Tarea de Progra 1.runtimeconfig.json
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\bin\Debug\net6.0\Tarea de Progra 1.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\bin\Debug\net6.0\Tarea de Progra 1.pdb
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.AssemblyInfoInputs.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.AssemblyInfo.cs
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.csproj.CoreCompileInputs.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\refint\Tarea de Progra 1.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.pdb
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\Tarea de Progra 1.genruntimeconfig.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\Tarea de Progra 1\obj\Debug\net6.0\ref\Tarea de Progra 1.dll

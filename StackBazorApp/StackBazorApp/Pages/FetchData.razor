@@ -1,0 +1,56 @@
+﻿@page "/fetchdata"
+@inject HttpClient Http
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>ApiChuckNorris</h1>
+
+
+@if (chucknorris == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Id</th>
+                <th>Url</th>
+                <th>update</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                <td>@chucknorris.value</td>
+                <td>@chucknorris.id</td>
+                <td>@chucknorris.url</td>
+                <td>@chucknorris.updated_at</td>
+               </tr>
+    
+        </tbody>
+    </table>
+}
+
+@code {
+    private categories? chucknorris;
+
+    protected override async Task OnInitializedAsync()
+    {
+        chucknorris = await Http.GetFromJsonAsync<categories>("https://api.chucknorris.io/jokes/random");
+    }
+
+    public class categories
+    {
+        public string? created_at { get; set; }
+
+        public string? id { get; set; }
+
+        public string? updated_at { get; set; }
+
+        public string? url { get; set; }
+
+        public string? value { get; set; }
+    }
+}

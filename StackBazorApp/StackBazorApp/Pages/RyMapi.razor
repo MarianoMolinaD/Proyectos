@@ -1,0 +1,22 @@
+﻿@page "/rickymorty"
+@inject HttpClient Http
+
+<h3>RyMapi</h3>
+
+@foreach (var caracters in caractersrym.results){
+    <div class="col-4">
+        <card class="card bg-primary mt-5">
+            <h3>@caracters.name</h3>
+            <img class="" src="@caracters.image" />
+        </card>
+    </div>
+}
+
+@code {
+    private caractersRyMData? caractersrym;
+
+    protected override async Task OnInitializedAsync()
+    {
+        caractersrym = await Http.GetFromJsonAsync<caractersRyMData>("https://rickandmortyapi.com/api/character");
+    }
+}

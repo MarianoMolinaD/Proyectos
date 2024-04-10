@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LESBlazorEliminar", "LESBlazorEliminar.csproj", "{95B53A5C-1E17-43F0-A502-EE2FC1895228}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95B53A5C-1E17-43F0-A502-EE2FC1895228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B53A5C-1E17-43F0-A502-EE2FC1895228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B53A5C-1E17-43F0-A502-EE2FC1895228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B53A5C-1E17-43F0-A502-EE2FC1895228}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43D80DA1-F890-483C-B577-4C83C0E33344}
+	EndGlobalSection
+EndGlobal

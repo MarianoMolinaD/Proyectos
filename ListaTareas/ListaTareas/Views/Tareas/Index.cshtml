@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Tareas>
+
+@{
+    ViewData["Title"] = "Tareas";
+}
+<div class="container">
+    <h1 class="text-center">Lista de tareas</h1>
+    <hr/>
+    <a asp-controller="Tareas" asp-action="Crear" class="btn btn-success">Crear Tarea</a>
+    <hr/>
+    <h4>Aqui podras ver la lista de tareas</h4>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tarea</th>
+            <th>Persona</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tareas in Model)
+        {
+            <tr>
+                <td>
+                    @tareas.Tarea
+                </td>
+                <td>
+                    @tareas.Persona
+                </td> 
+                <td>
+                    @tareas.Precio
+                </td>
+                <td>
+                    <a asp-controller="Tareas" asp-action="Editar" asp-route-id="@tareas.Id" class="btn btn-primary">Editar</a>
+                    <a asp-controller="Tareas" asp-action="Borrar" asp-route-id="@tareas.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

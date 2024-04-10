@@ -1,0 +1,14 @@
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\bin\Debug\net6.0\practica proba.exe
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\bin\Debug\net6.0\practica proba.deps.json
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\bin\Debug\net6.0\practica proba.runtimeconfig.json
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\bin\Debug\net6.0\practica proba.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\bin\Debug\net6.0\practica proba.pdb
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.AssemblyInfoInputs.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.AssemblyInfo.cs
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.csproj.CoreCompileInputs.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\refint\practica proba.dll
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.pdb
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\practica proba.genruntimeconfig.cache
+C:\Users\Acer nitro 5\Favorites\Practica Progra\aspnet\practica proba\obj\Debug\net6.0\ref\practica proba.dll

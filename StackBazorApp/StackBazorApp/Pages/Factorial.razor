@@ -1,0 +1,29 @@
+﻿
+
+<h3>Factorial</h3>
+
+<input type="number"/>
+<button onclick="getFactorial">Obtener Factoria</button>
+<hr/>
+
+
+@code {
+
+    int numero = 0;
+    int factorialNumero = 0;
+
+
+
+    int getFactorial(int x)
+    {
+        if (x == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            return getFactorial(x - 1) * x;
+        }
+    }
+
+}
