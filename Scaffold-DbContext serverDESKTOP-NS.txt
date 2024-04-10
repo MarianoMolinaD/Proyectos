@@ -1,0 +1,11 @@
+Scaffold-DbContext "server:DESKTOP-NST5V41; database=MVCCRUD; integrated security=true;" Microsoft.EntityFrameWorkCore.SqlServer -OutPutDir Models
+
+User Id=USUARIO;Password=CONTRASEÑA;
+
+Scaffold-DbContext "server:DESKTOP-NST5V41; database=MVCCRUD; User Id=sa;Password=Mmdavila123;" Microsoft.EntityFrameWorkCore.SqlServer -OutPutDir Models
+
+Scaffold-DbContext "Server=DESKTOP-NST5V41\SQLEXPRESS;Database=MVCCRUD;integrated security=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Trusted_Connection=SSPI;MultipleActiveResultSets=true;Trust Server Certificate=true
+
+Scaffold-DbContext "Server=DESKTOP-NST5V41\SQLEXPRESS;Database=Empleados;integrated security=true;Trusted_Connection=SSPI;MultipleActiveResultSets=true;Trust Server Certificate=true;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
